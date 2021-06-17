@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/Inscription.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://kit.fontawesome.com/7a84f0a28f.js" crossorigin="anonymous"></script>
+  <title>Inscription</title>
+</head>
+
+<body>
+
+
+  <div class="scrolltop sticky-top forefront">
+    <nav class="navbar colornavbar" id="navbar_top">
+        <div class="container-fluid">
+            <ul class="nav me-auto mb-2 mb-xl-0 col-2 col-sm-2 col-xl-2 order-1 order-xl-1 order-sm-1">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Fruits et legumes.html"><i class="fas fa-carrot"></i> Fruit et legumes</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Boissons.html"><i class="fas fa-wine-bottle"></i> Boissons</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Snacks.html"><i class="fas fa-cookie-bite"></i> Snacks</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Autres.html"><i class="fas fa-pencil-ruler"></i> Autres</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex col-12 col-sm-6 col-xl-8 text-center order-4 order-xl-2 order-sm-2">
+                <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="col-5 col-sm-2 col-xl-1 text-center order-3 order-xl-4 order-sm-4">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#ModalConnexion" class="btn buttonSignUp text-white fw-bold">Connexion</button>
+            </div>
+            <div class="col-5 col-sm-2 col-xl-1 text-center order-2 order-xl-3 order-sm-3">
+                <a class="text-decoration-none text-white text-center" href="Inscription.html">
+                    <span><button type="button" class="btn buttonSignIn text-white fw-bold">M'inscrire</button></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="modal fade" id="ModalConnexion" tabindex="-1" aria-labelledby="ModalConnexionLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="ModalConnexionLabel">Connexion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="InputEmail" class="form-label">Adresse mail</label>
+                      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                      <label for="InputPassword" class="form-label">Mot de passe</label>
+                      <input type="password" class="form-control" id="InputPassword">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Se connecter <i class="fas fa-arrow-right"></i></button>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+  <!-- Inscription -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <p class="col-12 col-xl-12 text-center fs-1">Inscription</p>
+      <div class="col-1 col-xl-3"></div>
+      <div class="col-10 col-xl-6 row g-3">
+        <div class="col-sm-6">
+          <label for="firstName" class="form-label">Penom</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Jean" value="" required="">
+        </div>
+
+        <div class="col-sm-6">
+          <label for="lastName" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Pierre" value="" required="">
+        </div>
+
+
+        <div class="col-12">
+          <label for="email" class="form-label">Email <span class="text-muted">(*)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="jeanpierre@exemple.com">
+        </div>
+
+        <div class="col-12">
+          <label for="address" class="form-label">Adresse</label>
+          <input type="text" class="form-control" id="address" placeholder="26 rue Francois Mauriac" required="">
+        </div>
+
+        <div class="col-md-5">
+          <label for="country" class="form-label">Pays</label>
+          <select class="form-select" id="country" required="">
+            <option value="">Choisir...</option>
+            <option>France</option>
+            <option>Espagne</option>
+            <option>Belgique</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="state" class="form-label">Ville</label>
+          <select class="form-select" id="state" required="">
+            <option value="">Choisir...</option>
+            <option>Nogent-sur-oise</option>
+            <option>Creil</option>
+            <option>Montataire</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label for="zip" class="form-label">Code postal</label>
+          <input type="text" class="form-control" id="zip" placeholder="60000" required="">
+        </div>
+      </div>
+      <div class="col-1 col-xl-3"></div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

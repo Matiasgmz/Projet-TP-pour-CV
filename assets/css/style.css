@@ -1,0 +1,71 @@
+body {
+    background-color:  #f2f4f8;
+}
+
+header {
+    background-image: url(../img/1633.jpg);
+    height: 50vh;
+    background-size: cover;
+}
+
+.title {
+    margin-top: 6rem;
+    font-size: 3.5rem;
+    color: black;
+}
+
+
+.textcatego {
+    color: white;
+    text-shadow: black 1px 0 100px;
+    text-align: center;
+    text-shadow:  0 0 1em blue, 0 0 0.2em blue;
+}
+
+.imgcategorie:hover {
+    filter: blur(0.1rem);
+}
+
+.view {
+    z-index: 100;
+}
+
+.colornavbar {
+    background-color: #254E70;
+}
+
+.img-carousel {
+    width: 100%;
+}
+
+.text-footer {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+table {
+    background-color: black;
+    width: 70%;
+}
+
+.buttonSignUp {
+    background-color: #37718e;
+}
+
+.buttonSignUp:hover {
+    background-color:transparent;
+    border-color: #37718e;
+}
+
+.buttonSignIn {
+    background-color: #8ee3ef;
+}
+
+.buttonSignIn:hover {
+    background-color: transparent;
+    border-color: #8ee3ef;
+}
+
+
+
+

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://kit.fontawesome.com/7a84f0a28f.js" crossorigin="anonymous"></script>
+  <title>Naksh</title>
+</head>
+
+<body>
+  <div class="scrolltop sticky-top forefront">
+    <nav class="navbar colornavbar" id="navbar_top">
+        <div class="container-fluid">
+            <ul class="nav me-auto mb-2 mb-xl-0 col-2 col-sm-2 col-xl-2 order-1 order-xl-1 order-sm-1">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Fruits et legumes.html"><i class="fas fa-carrot"></i> Fruit et legumes</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Boissons.html"><i class="fas fa-wine-bottle"></i> Boissons</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Snacks.html"><i class="fas fa-cookie-bite"></i> Snacks</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Autres.html"><i class="fas fa-pencil-ruler"></i> Autres</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex col-12 col-sm-6 col-xl-8 text-center order-4 order-xl-2 order-sm-2">
+                <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="col-5 col-sm-2 col-xl-1 text-center order-3 order-xl-4 order-sm-4">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#ModalConnexion" class="btn buttonSignUp text-white fw-bold">Connexion</button>
+            </div>
+            <div class="col-5 col-sm-2 col-xl-1 text-center order-2 order-xl-3 order-sm-3">
+                <a class="text-decoration-none text-white text-center" href="Inscription.html">
+                    <span><button type="button" class="btn buttonSignIn text-white fw-bold">M'inscrire</button></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="modal fade" id="ModalConnexion" tabindex="-1" aria-labelledby="ModalConnexionLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="ModalConnexionLabel">Connexion</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="InputEmail" class="form-label">Adresse mail</label>
+                      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                  </div>
+                  <div class="mb-3">
+                      <label for="InputPassword" class="form-label">Mot de passe</label>
+                      <input type="password" class="form-control" id="InputPassword">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Se connecter <i class="fas fa-arrow-right"></i></button>
+              </form>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  <div class="container-fluid mt-3">
+    <div class="row text-center">
+      <div class="col-xl-2"></div>
+      <div class="col-xl-8">
+        <p> Etiam in odio et nisl aliquam ullamcorper sed ut risus. Aenean laoreet vulputate bibendum. Curabitur
+          ac aliquam
+          purus. Aenean vehicula risus eu ligula mattis ornare. Mauris sed quam tincidunt, hendrerit ante id,
+          vestibulum
+          libero. Nunc non vestibulum ex. Morbi sed tincidunt arcu, in fermentum nisi. Aliquam erat volutpat.
+          Pellentesque
+          volutpat erat vitae nulla aliquam dignissim. Vivamus non velit justo. Class aptent taciti sociosqu
+          ad litora
+          torquent per conubia nostra, per inceptos himenaeos.
+
+        </p>
+      </div>
+      <div class="col-xl-2"></div>
+    </div>
+  </div>
+<!-- carousel promo -->
+  <div class="container-fluid mt-5">
+    <div class="row justify-content-center">
+      <div id="carouselRight" class="carousel carousel-dark slide col-12 col-xl-10" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselRight" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselRight" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselRight" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/imageCarousel3.png" class="d-block img-carousel img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/imageCarousel.png" class="d-block img-carousel img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/imageCarousel2.png" class="d-block img-carousel img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRight" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselRight" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden text-dark">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+<!-- categorie  -->
+  <div class="container-fluid mt-5 mb-5">
+    <div class="row">
+      <div class="col-xl-1"></div>
+      <div class="card-group col-xl-10 bg-white p-xl-5">
+        <div class="row justify-content-between ">
+          <div class="card col-6 col-xl-2 p-0">
+            <a class="text-decoration-none" href="Snacks.html"> <img src="assets/img/snacks.jpg" class="card-img-top imgcategorie" alt="...">
+              <div class="card-img-overlay position-absolute top-50">
+                <p class="card-title textcatego fs-3">SNACKS</p>
+              </div>
+            </a>
+          </div>
+          <div class="card col-6 col-xl-2 p-0">
+            <a class="text-decoration-none" href="Fruits et legumes.html"> <img src="assets/img/fruit fond.jpg" class="card-img-top imgcategorie" alt="...">
+              <div class="card-img-overlay position-absolute top-50">
+                <p class="card-title textcatego fs-3">FRUITS ET <br /> LEGUMES</p>
+              </div>
+            </a>
+          </div>
+          <div class="card col-6 col-xl-2 p-0">
+            <a class="text-decoration-none" href="Boissons.html">
+              <img src="assets/img/boisson.jpg" class="card-img-top imgcategorie" alt="...">
+              <div class="card-img-overlay position-absolute top-50">
+                <p class="card-title textcatego fs-3">BOISSONS</p>
+              </div>
+            </a>
+          </div>
+          <div class="card col-6 col-xl-2 p-0">
+            <a class="text-decoration-none" href="Snacks.html">
+              <img src="assets/img/autres.jpg" class="card-img-top imgcategorie" alt="...">
+              <div class="card-img-overlay position-absolute top-50">
+                <p class="card-title textcatego fs-3">AUTRES</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-1"></div>
+    </div>
+  </div>
+
+
+<!-- footer -->
+
+  <div class="container-fluid bg-white mt-3">
+    <div class="row">
+      <div class="col-12 col-xl-4 mt-4 text-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1425.7003030623541!2d2.470875073113806!3d49.26800690167504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1619192857318!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+
+      <div class="col-12 col-xl-4 text-start mt-4">
+        <p class="text-footer">
+          Contact
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+            </tr>
+          </thead>
+        </table>
+        <p class="mt-4">
+          <i class="fas fa-phone-volume"></i> <a href="tel:+33680127820">06 80 12 78 20</a></br>
+        </p>
+        <p>
+          <i class="fas fa-envelope"></i> <a href="mailto:BoutiqueGrossite@gmail.com">BoutiqueGrossite@gmail.com</a>
+        </p>
+        <p>
+          <i class="fas fa-map-marked"></i> 24 rue Francois Mauriac, Nogent-sur-oise 60180.
+        </p>
+        <p class="fs-3">
+          <a href="#" class="m-2 text-primary"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="m-2 text-danger"><i class="fab fa-pinterest"></i></a>
+          <a href="#" class="m-2 text-primary"><i class="fab fa-twitter"></i></a>
+          <a href="#" class="m-2 text-danger"><i class="fab fa-youtube"></i></a>
+        </p>
+      </div>
+
+      <div class="col-12 col-xl-4 mt-4 text-start">
+        <p class="text-footer">
+          Liens utiles
+        </p>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+            </tr>
+          </thead>
+        </table>
+        <p class="mt-4">
+         <a href="#" class="text-decoration-none">FAQ Clients</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
