@@ -11,53 +11,59 @@
 </head>
 
 <body>
-    <div class="scrolltop sticky-top forefront">
-        <nav class="navbar colornavbar" id="navbar_top">
-            <div class="container-fluid">
-                <ul class="nav me-auto mb-2 mb-xl-0 col-2 col-sm-2 col-xl-2 order-1 order-xl-1 order-sm-1">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-bars"></i>
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="index.html"><i class="fas fa-home"></i> Home</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="Fruits et legumes.html"><i class="fas fa-carrot"></i> Fruit et legumes</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="Boissons.html"><i class="fas fa-wine-bottle"></i> Boissons</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="Snacks.html"><i class="fas fa-cookie-bite"></i> Snacks</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="Autres.html"><i class="fas fa-pencil-ruler"></i> Autres</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <form class="d-flex col-12 col-sm-6 col-xl-8 text-center order-4 order-xl-2 order-sm-2">
-                    <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
-                    <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
-                </form>
-                <div class="col-5 col-sm-2 col-xl-1 text-center order-3 order-xl-4 order-sm-4">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#ModalConnexion" class="btn buttonSignUp text-white fw-bold">Connexion</button>
-                </div>
-                <div class="col-5 col-sm-2 col-xl-1 text-center order-2 order-xl-3 order-sm-3">
-                    <a class="text-decoration-none text-white text-center" href="Inscription.html">
-                        <span><button type="button" class="btn buttonSignIn text-white fw-bold">M'inscrire</button></span>
-                    </a>
-                </div>
+   <!--NAVBAR-->
+   <div id="navIndex" class="scrolltop sticky-top forefront">
+    <nav class="navbar colornavbar" id="navbar_top">
+        <div class="container-fluid">
+            <div class="nav me-auto mb-2 mb-xl-0 col-2 col-sm-2 col-xl-2 order-1 order-xl-1 order-sm-1">
+                <a class="nav-link dropdown text-white open" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </a>
             </div>
-        </nav>
-    </div>
+            <form class="d-flex col-12 col-sm-6 col-xl-8 text-center order-4 order-xl-2 order-sm-2">
+                <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
+                <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="col-5 col-sm-2 col-xl-1 text-center order-3 order-xl-4 order-sm-4">
+                <button type="button" data-bs-toggle="modal" data-bs-target="#ModalConnexion" class="btn buttonSignUp text-white fw-bold">Connexion</button>
+            </div>
+            <div class="col-5 col-sm-2 col-xl-1 text-center order-2 order-xl-3 order-sm-3">
+                <a class="text-decoration-none text-white text-center" href="Inscription.html">
+                    <span><button type="button" class="btn buttonSignIn text-white fw-bold">M'inscrire</button></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+</div>
 
+<!-- sideBars -->
+
+<div class="d-flex flex-column flex-shrink-0  bg-white sidenav fixed-bottom" id="mySidenav">
+    <span class="closebtn"><i class="fas fa-times"></i></span>
+    <ul class="nav nav-pills text-dark flex-column mb-auto mt-4">
+        <li><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="nav-link" href="Fruits et legumes.html"><i class="fas fa-carrot"></i> Fruit et legumes</a>
+        </li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="nav-link" href="Boissons.html"><i class="fas fa-wine-bottle"></i> Boissons</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="nav-link" href="Snacks.html"><i class="fas fa-cookie-bite"></i> Snacks</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="nav-link" href="Autres.html"><i class="fas fa-pencil-ruler"></i> Autres</a></li>
+    </ul>
+</div>
+
+    <!-- modal -->
     <div class="modal fade" id="ModalConnexion" tabindex="-1" aria-labelledby="ModalConnexionLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -85,32 +91,287 @@
         </div>
     </div>
 
-    <div class="card mx-auto mt-4" style="width: 70%;">
+
+    <div id="prodIndex" class="card mx-auto my-4" style="width: 70%;">
         <div class="row g-0">
             <div class="col-md-4">
-                <img src="assets/img/orange.jpg" class="img-fluid" alt="...">
+                <div id="carouselExampleFade" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/img/courgette.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/orange.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/img/champignon.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
             <div class="col-md-8 ms-0">
                 <div class="card-body">
-                    <h5 class="card-title text-center">Orange</h5>
-                    <p class="card-text text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent fermentum congue consequat. Nulla vestibulum tellus tortor, ac blandit lacus tempus sit amet. Maecenas tristique erat in vulputate feugiat. Sed pharetra metus quis risus eleifend gravida. Nulla laoreet, ipsum in finibus ullamcorper, elit nulla ornare sem, at cursus dui mauris nec turpis. Aliquam molestie convallis scelerisque. Sed vel lectus placerat est gravida mattis sit amet ut purus. Fusce id volutpat ipsum. Proin finibus id elit non lobortis. Ut rutrum justo pretium magna varius, id rutrum nibh ultrices. Aenean convallis aliquam arcu.</p>
+                    <p class=" card-title text-center fs-3">Orange filet calibre 5/6 catégorie 1 - 2 kg Espagne</p>
+                    <table class="table table-striped mt-5">
+                        <tbody>
+                            <tr>
+                                <th>Type de fruit</th>
+                                <td>Orange</td>
+                            </tr>
+                            <tr>
+                                <th>Poids (kg)</th>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <th>Pays</th>
+                                <td>Espagne</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="row d-flex mb-2">
-            <select class="form-select offset-6 w-25" aria-label="">
-                <option selected>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-            <button type="button" class="btn btn-primary w-25">Primary</button>
         </div>
-        </div>
+    </div>
 
+
+    <div class="container-fluid my-4">
+        <div class="row">
+            <p class="col-6 col-sm-4 offset-1 fw-bolder">Plus d'articles à explorer</p>
+        </div>
+        <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner SizeSuggestion">
+                <div class="carousel-item active">
+                    <div class="row text-center">
+                        <div class="col-6 col-xxl-2">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/champignon.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/orange.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img//courgette.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row text-center ">
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/champignon.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/orange.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img//courgette.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row text-center ">
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/champignon.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/orange.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img//courgette.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-6 col-xxl-2 ">
+                            <a href="produits.html" class="text-decoration-none text-dark">
+                                <div class="card">
+                                    <img src="assets/img/carotte.png" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a longer</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

@@ -11,37 +11,15 @@
 </head>
 
 <body>
-  <div class="scrolltop sticky-top forefront">
+   <!--NAVBAR-->
+   <div id="navIndex" class="scrolltop sticky-top forefront">
     <nav class="navbar colornavbar" id="navbar_top">
         <div class="container-fluid">
-            <ul class="nav me-auto mb-2 mb-xl-0 col-2 col-sm-2 col-xl-2 order-1 order-xl-1 order-sm-1">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fas fa-bars"></i>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="index.html"><i class="fas fa-home"></i> Home</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="Fruits et legumes.html"><i class="fas fa-carrot"></i> Fruit et legumes</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="Boissons.html"><i class="fas fa-wine-bottle"></i> Boissons</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="Snacks.html"><i class="fas fa-cookie-bite"></i> Snacks</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="Autres.html"><i class="fas fa-pencil-ruler"></i> Autres</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div class="nav me-auto mb-2 mb-xl-0 col-2 col-sm-2 col-xl-2 order-1 order-xl-1 order-sm-1">
+                <a class="nav-link dropdown text-white open" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
             <form class="d-flex col-12 col-sm-6 col-xl-8 text-center order-4 order-xl-2 order-sm-2">
                 <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
                 <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
@@ -58,31 +36,58 @@
     </nav>
 </div>
 
-<div class="modal fade" id="ModalConnexion" tabindex="-1" aria-labelledby="ModalConnexionLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title" id="ModalConnexionLabel">Connexion</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <form>
-                  <div class="mb-3">
-                      <label for="InputEmail" class="form-label">Adresse mail</label>
-                      <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
-                  </div>
-                  <div class="mb-3">
-                      <label for="InputPassword" class="form-label">Mot de passe</label>
-                      <input type="password" class="form-control" id="InputPassword">
-                  </div>
-                  <button type="submit" class="btn btn-primary">Se connecter <i class="fas fa-arrow-right"></i></button>
-              </form>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
-          </div>
-      </div>
-  </div>
+<!-- sideBars -->
+
+<div class="d-flex flex-column flex-shrink-0  bg-white sidenav fixed-bottom" id="mySidenav">
+    <span class="closebtn"><i class="fas fa-times"></i></span>
+    <ul class="nav nav-pills text-dark flex-column mb-auto mt-4">
+        <li><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+        </li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="nav-link" href="Fruits et legumes.html"><i class="fas fa-carrot"></i> Fruit et legumes</a>
+        </li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="nav-link" href="Boissons.html"><i class="fas fa-wine-bottle"></i> Boissons</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="nav-link" href="Snacks.html"><i class="fas fa-cookie-bite"></i> Snacks</a></li>
+        <li>
+            <hr class="dropdown-divider">
+        </li>
+        <li><a class="nav-link" href="Autres.html"><i class="fas fa-pencil-ruler"></i> Autres</a></li>
+    </ul>
+</div>
+  <!-- modal -->
+  <div class="modal fade" id="ModalConnexion" tabindex="-1" aria-labelledby="ModalConnexionLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="ModalConnexionLabel">Connexion</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="InputEmail" class="form-label">Adresse mail</label>
+                        <input type="email" class="form-control" id="InputEmail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="InputPassword" class="form-label">Mot de passe</label>
+                        <input type="password" class="form-control" id="InputPassword">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Se connecter <i class="fas fa-arrow-right"></i></button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+            </div>
+        </div>
+    </div>
 </div>
 
 
@@ -105,14 +110,14 @@
       <div class="col-xl-2"></div>
     </div>
   </div>
-<!-- carousel promo -->
+  <!-- carousel promo -->
   <div class="container-fluid mt-5">
     <div class="row justify-content-center">
-      <div id="carouselRight" class="carousel carousel-dark slide col-12 col-xl-10" data-bs-ride="carousel">
+      <div id="carousel" class="carousel carousel-dark slide col-12 col-xl-10" data-bs-ride="carousel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselRight" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselRight" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselRight" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -125,11 +130,11 @@
             <img src="assets/img/imageCarousel2.png" class="d-block img-carousel img-fluid" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselRight" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselRight" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden text-dark">Next</span>
         </button>
@@ -137,7 +142,7 @@
     </div>
   </div>
 
-<!-- categorie  -->
+  <!-- categorie  -->
   <div class="container-fluid mt-5 mb-5">
     <div class="row">
       <div class="col-xl-1"></div>
@@ -180,11 +185,11 @@
   </div>
 
 
-<!-- footer -->
+  <!-- footer -->
 
   <div class="container-fluid bg-white mt-3">
     <div class="row">
-      <div class="col-12 col-xl-4 mt-4 text-center">
+      <div class="col-12 col-xl-4 mt-4 text-center p-4">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1425.7003030623541!2d2.470875073113806!3d49.26800690167504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1619192857318!5m2!1sfr!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
         </iframe>
       </div>
@@ -193,7 +198,7 @@
         <p class="text-footer">
           Contact
         </p>
-        <table>
+        <table class="lineBlack">
           <thead>
             <tr>
               <th></th>
@@ -221,7 +226,7 @@
         <p class="text-footer">
           Liens utiles
         </p>
-        <table>
+        <table class="lineBlack">
           <thead>
             <tr>
               <th></th>
@@ -229,16 +234,14 @@
           </thead>
         </table>
         <p class="mt-4">
-         <a href="#" class="text-decoration-none">FAQ Clients</a>
+          <a href="#" class="text-decoration-none">FAQ Clients</a>
         </p>
       </div>
     </div>
   </div>
 
-
-
-
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

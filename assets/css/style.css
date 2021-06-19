@@ -1,11 +1,5 @@
 body {
-    background-color:  #f2f4f8;
-}
-
-header {
-    background-image: url(../img/1633.jpg);
-    height: 50vh;
-    background-size: cover;
+    background-color: #f2f4f8;
 }
 
 .title {
@@ -14,20 +8,15 @@ header {
     color: black;
 }
 
-
 .textcatego {
     color: white;
     text-shadow: black 1px 0 100px;
     text-align: center;
-    text-shadow:  0 0 1em blue, 0 0 0.2em blue;
+    text-shadow: 0 0 1em blue, 0 0 0.2em blue;
 }
 
 .imgcategorie:hover {
-    filter: blur(0.1rem);
-}
-
-.view {
-    z-index: 100;
+    filter: blur(0.1rem) grayscale(50%);
 }
 
 .colornavbar {
@@ -43,7 +32,7 @@ header {
     font-weight: bold;
 }
 
-table {
+.lineBlack {
     background-color: black;
     width: 70%;
 }
@@ -53,7 +42,7 @@ table {
 }
 
 .buttonSignUp:hover {
-    background-color:transparent;
+    background-color: transparent;
     border-color: #37718e;
 }
 
@@ -66,6 +55,49 @@ table {
     border-color: #8ee3ef;
 }
 
+.SizeSuggestion {
+    padding-right: 10%;
+    padding-left: 10%;
+}
 
+.sidenav {
+    width: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    overflow-x: hidden;
+    transition: 0.5s;
+    left: 0%;
+    z-index: 3;
+    box-shadow:  -20px 0.01px 100px black;
+}
 
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    display: block;
+    transition: 0.3s;
+    margin-right: 0.5rem;
+}
 
+.sidenav a:hover {
+    color: #254E70;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#navIndex {
+    z-index: 2;
+}
+
+#prodIndex {
+    z-index: 1;
+}
