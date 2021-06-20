@@ -72,7 +72,7 @@ body {
     box-shadow:  -20px 0.01px 100px black;
 }
 
-.sidenav a {
+.sidenav .nav-link {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 1rem;
@@ -105,4 +105,20 @@ body {
 .titleCardProduct {
     text-decoration: none;
     color: black;
+}
+
+.SignInSidebar {
+    background-color: #8ee3ef;
+}
+
+.SignInSidebar:hover {
+    background-color: #254E70;
+}
+
+.SignUpSidebar {
+    background-color: #254E70;
+}
+
+.SignUpSidebar:hover {
+    background-color: #8ee3ef;
 }
