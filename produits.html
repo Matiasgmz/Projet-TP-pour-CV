@@ -20,14 +20,14 @@
                     <i class="fas fa-bars"></i>
                 </a>
             </div>
-            <form class="d-flex col-12 col-sm-6 col-xl-8 text-center order-4 order-xl-2 order-sm-2">
+            <form class="d-flex col-10 col-sm-6 col-xl-8 text-center order-4 order-xl-2 order-sm-2">
                 <input class="form-control me-2" type="search" placeholder="Rechercher" aria-label="Search">
                 <button class="btn btn-success" type="submit"><i class="fas fa-search"></i></button>
             </form>
-            <div class="col-5 col-sm-2 col-xl-1 text-center order-3 order-xl-4 order-sm-4">
+            <div class="d-none d-sm-block col-sm-2 col-xl-1 text-center order-xl-4 order-sm-4">
                 <button type="button" data-bs-toggle="modal" data-bs-target="#ModalConnexion" class="btn buttonSignUp text-white fw-bold">Connexion</button>
             </div>
-            <div class="col-5 col-sm-2 col-xl-1 text-center order-2 order-xl-3 order-sm-3">
+            <div class="d-none d-sm-block col-sm-2 col-xl-1 text-center order-xl-3 order-sm-3">
                 <a class="text-decoration-none text-white text-center" href="Inscription.html">
                     <span><button type="button" class="btn buttonSignIn text-white fw-bold">M'inscrire</button></span>
                 </a>
@@ -36,31 +36,43 @@
     </nav>
 </div>
 
+
 <!-- sideBars -->
 
 <div class="d-flex flex-column flex-shrink-0  bg-white sidenav fixed-bottom" id="mySidenav">
-    <span class="closebtn"><i class="fas fa-times"></i></span>
-    <ul class="nav nav-pills text-dark flex-column mb-auto mt-4">
-        <li><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
-        </li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="nav-link" href="Fruits et legumes.html"><i class="fas fa-carrot"></i> Fruit et legumes</a>
-        </li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="nav-link" href="Boissons.html"><i class="fas fa-wine-bottle"></i> Boissons</a></li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="nav-link" href="Snacks.html"><i class="fas fa-cookie-bite"></i> Snacks</a></li>
-        <li>
-            <hr class="dropdown-divider">
-        </li>
-        <li><a class="nav-link" href="Autres.html"><i class="fas fa-pencil-ruler"></i> Autres</a></li>
-    </ul>
+  <span class="closebtn"><i class="fas fa-times"></i></span>
+  <ul class="nav nav-pills text-dark flex-column mb-auto mt-5">
+      <li><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+      </li>
+      <li>
+          <hr class="dropdown-divider">
+      </li>
+      <li><a class="nav-link" href="Fruits et legumes.html"><i class="fas fa-carrot"></i> Fruit et legumes</a>
+      </li>
+      <li>
+          <hr class="dropdown-divider">
+      </li>
+      <li><a class="nav-link" href="Boissons.html"><i class="fas fa-wine-bottle"></i> Boissons</a></li>
+      <li>
+          <hr class="dropdown-divider">
+      </li>
+      <li><a class="nav-link" href="Snacks.html"><i class="fas fa-cookie-bite"></i> Snacks</a></li>
+      <li>
+          <hr class="dropdown-divider">
+      </li>
+      <li><a class="nav-link" href="Autres.html"><i class="fas fa-pencil-ruler"></i> Autres</a></li>
+      <li>
+          <hr class="dropdown-divider">
+      </li>
+      <li class="d-flex justify-content-between px-1">
+          <div class="text-center">
+              <button type="button" data-bs-toggle="modal" data-bs-target="#ModalConnexion" class="btn SignUpSidebar text-white fw-bold">Connexion</button>
+          </div>
+          <div class="text-center">
+              <a class="text-decoration-none text-center btn SignInSidebar text-white fw-bold" role="button" href="Inscription.html">M'inscrire</a>
+          </div>
+      </li>
+  </ul>
 </div>
 
     <!-- modal -->
@@ -81,7 +93,8 @@
                             <label for="InputPassword" class="form-label">Mot de passe</label>
                             <input type="password" class="form-control" id="InputPassword">
                         </div>
-                        <button type="submit" class="btn btn-primary">Se connecter <i class="fas fa-arrow-right"></i></button>
+                        <button type="submit" class="btn btn-primary">Se connecter <i
+                                class="fas fa-arrow-right"></i></button>
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -95,7 +108,8 @@
     <div id="prodIndex" class="card mx-auto my-4" style="width: 70%;">
         <div class="row g-0">
             <div class="col-md-4">
-                <div id="carouselExampleFade" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                <div id="carouselExampleFade" class="carousel carousel-dark slide carousel-fade"
+                    data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="assets/img/courgette.jpg" class="d-block w-100" alt="...">
@@ -107,11 +121,13 @@
                             <img src="assets/img/champignon.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -359,11 +375,13 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
